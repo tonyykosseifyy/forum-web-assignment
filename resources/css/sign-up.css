@@ -1,0 +1,138 @@
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.upper-container {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.upper-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--main-color);
+  margin-right: 8px;
+}
+
+.upper-button {
+  padding: 5px 15px;
+  font-size: 14px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  align-items: center;
+  text-align: center;
+}
+
+.main-container-upper > h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.main-container-upper > h6 {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.main-container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 50px;
+  position: relative;
+}
+
+.main-container-form label {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.main-container-form input {
+  min-width: 270px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input-password {
+  margin-bottom: 0px !important ;
+}
+.main-container-form input::placeholder {
+  font-size: 0.8rem;
+  color: #c4c4c4;
+}
+.password-wrapper {
+  position: relative;
+}
+.eye-toggle {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  z-index: 100;
+  padding: 0 0 0 10px;
+  background: white;
+}
+
+.fa-eye,
+.fa-eye-slash {
+  color: var(--main-color);
+}
+
+.forgot-password {
+  font-size: 0.8rem;
+  color: var(--main-color);
+  margin-top: 7px;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.main-container-form button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.signup-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  align-items: stretch;
+}
+
+.signup-wrapper-left {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.signup-wrapper-left,
+.signup-wrapper-right {
+  flex: 1;
+}
+
+.signup-wrapper-left-body {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-wrapper-left-body h1 {
+  font-size: 36px;
+  font-weight: 300;
+  color: white;
+  text-wrap: wrap;
+  text-align: center;
+  line-height: 44px;
+}
