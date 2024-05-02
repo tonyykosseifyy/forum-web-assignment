@@ -81,18 +81,27 @@
   position: absolute;
   top: 0px;
   right: 0px;
-
   background-color: white;
   border-radius: 50%;
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #bdbdbd;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.edit-button-container:hover {
+  border-color: black;
+  transform: scale(1.1);
 }
 .edit-button {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   object-fit: contain;
+  transform: translateX(1px);
+  position: relative;
 }
 
 .signup-input-file > img {
