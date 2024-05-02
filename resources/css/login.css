@@ -62,6 +62,9 @@
   position: relative;
 }
 
+.input-password {
+  margin-bottom: 0px !important ;
+}
 .main-container-form input::placeholder {
   font-size: 0.8rem;
   color: #c4c4c4;
@@ -76,4 +79,17 @@
   z-index: 100;
   padding: 0 0 0 10px;
   background: white;
+}
+
+.fa-eye,
+.fa-eye-slash {
+  color: var(--main-color);
+}
+
+.forgot-password {
+  font-size: 0.8rem;
+  color: var(--main-color);
+  margin-top: 7px;
+  text-decoration: underline;
+  font-style: italic;
 }
