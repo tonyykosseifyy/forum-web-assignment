@@ -36,7 +36,44 @@
 }
 
 .main-container-upper > h6 {
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: 1.1rem;
   font-weight: 300;
+}
+
+.main-container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 50px;
+  position: relative;
+}
+
+.main-container-form label {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.main-container-form input {
+  min-width: 270px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.main-container-form input::placeholder {
+  font-size: 0.8rem;
+  color: #c4c4c4;
+}
+.password-wrapper {
+  position: relative;
+}
+.eye-toggle {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  z-index: 100;
+  padding: 0 0 0 10px;
+  background: white;
 }

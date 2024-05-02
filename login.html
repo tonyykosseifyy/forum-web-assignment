@@ -20,6 +20,10 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/e0dbca38a7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Login Wrapper -->
@@ -36,7 +40,46 @@
           <h1>Forum</h1>
           <h6>Hello, who’s this?</h6>
         </div>
+        <form class="main-container-form">
+          <label class="label-primary" for="email">Email</label>
+          <input
+            placeholder="tony@gmail.com"
+            class="input-primary"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+          <label class="label-primary" for="password">Password</label>
+          <div class="password-wrapper">
+            <input
+              class="input-primary"
+              type="password"
+              id="password"
+              name="password"
+              required
+              placeholder="At least 8 characters"
+            />
+            <div class="toggle eye-toggle">
+              <i class="fa fa-eye" id="togglePassword"></i>
+            </div>
+          </div>
+          <button class="button-filled">Log In to Forum</button>
+        </form>
       </div>
     </div>
+    <script>
+      const togglePassword = document.getElementById("togglePassword");
+      const password = document.getElementById("password");
+
+      togglePassword.addEventListener("click", function () {
+        // Toggle password visibility
+        const type = password.type === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+
+        // Change icon based on password visibility
+        this.classList.toggle("fa-eye-slash");
+      });
+    </script>
   </body>
 </html>
