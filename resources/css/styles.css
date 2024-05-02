@@ -18,21 +18,36 @@
 
 /* Global styles */
 
+/* General Button */
+.button {
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 1px;
+}
+
 /* Outlined Button */
 .button-outlined {
   border: 1px solid black;
   color: var(--main-color);
-  border-radius: 1px;
-  font-weight: 400;
-  cursor: pointer;
-  transition: all 0.3s;
   background-color: white;
 }
+
 .button-outlined:hover {
   background-color: black;
   color: var(--secondary-color);
 }
-/* -------------- */
+
+/* Filled Button */
+.button-filled {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+}
+.button-filled:hover {
+  background-color: white;
+  color: black;
+}
 
 /* Label */
 .label-primary {
