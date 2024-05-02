@@ -18,6 +18,8 @@
 
 /* Global styles */
 
+
+/* Outlined Button */
 .button-outlined {
   border: 1px solid black;
   color: var(--main-color);
@@ -31,3 +33,4 @@
   background-color: black;
   color: var(--secondary-color);
 }
+/* -------------- */
