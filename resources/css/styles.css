@@ -5,14 +5,29 @@
   margin: 0;
 }
 
-
 /* declaring css variables */
 :root {
-  --main-color: #4C4C4C;
-  --secondary-color: #F2F2F2;
-  --accent-color: #FFC107;
-  --danger-color: #FF5252;
-  --success-color: #4CAF50;
-  --warning-color: #FF9800;
-  --info-color: #2196F3;
+  --main-color: #4c4c4c;
+  --secondary-color: #f2f2f2;
+  --accent-color: #ffc107;
+  --danger-color: #ff5252;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --info-color: #2196f3;
+}
+
+/* Global styles */
+
+.button-outlined {
+  border: 1px solid black;
+  color: var(--main-color);
+  border-radius: 1px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: white;
+}
+.button-outlined:hover {
+  background-color: black;
+  color: var(--secondary-color);
 }
