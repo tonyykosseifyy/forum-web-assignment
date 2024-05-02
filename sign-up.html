@@ -82,8 +82,54 @@
               Dive Into Discussions, Engage with Enthusiasts, Share Your Stories
             </h6>
           </div>
+          <form class="signup-container-form">
+            <input
+              placeholder="Name"
+              class="input-primary"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+            <input
+              placeholder="Email"
+              class="input-primary"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+            <div class="password-wrapper">
+              <input
+                class="input-primary input-password"
+                type="password"
+                id="password"
+                name="password"
+                required
+                placeholder="Password"
+              />
+              <div class="toggle eye-toggle">
+                <i class="fa fa-eye" id="togglePassword"></i>
+              </div>
+            </div>
+            <button class="button button-filled">Create Account</button>
+          </form>
         </div>
       </div>
     </div>
+    <script>
+      const togglePassword = document.getElementById("togglePassword");
+      const password = document.getElementById("password");
+
+      togglePassword.addEventListener("click", function () {
+        // Toggle the type attribute
+        const isPassword = password.type === "password";
+        password.type = isPassword ? "text" : "password";
+
+        // Toggle the icon class
+        this.classList.toggle("fa-eye");
+        this.classList.toggle("fa-eye-slash");
+      });
+    </script>
   </body>
 </html>

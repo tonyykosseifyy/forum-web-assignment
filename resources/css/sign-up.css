@@ -41,21 +41,21 @@
   font-weight: 300;
 }
 
-.main-container-form {
+.signup-container-form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 50px;
   position: relative;
 }
 
-.main-container-form label {
+.signup-container-form label {
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-.main-container-form input {
+.signup-container-form input {
   min-width: 270px;
   border-radius: 3px;
   margin-bottom: 20px;
@@ -65,7 +65,7 @@
 .input-password {
   margin-bottom: 0px !important ;
 }
-.main-container-form input::placeholder {
+.signup-container-form input::placeholder {
   font-size: 0.8rem;
   color: #c4c4c4;
 }
@@ -94,7 +94,7 @@
   font-style: italic;
 }
 
-.main-container-form button {
+.signup-container-form button {
   width: 100%;
   margin-top: 30px;
   padding: 10px;
@@ -184,7 +184,11 @@
   display: flex;
   flex-direction: column;
 }
-
+.signup-wrapper-right-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .signup-wrapper-right-body-upper {
   display: flex;
   flex-direction: column;
