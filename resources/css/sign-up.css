@@ -56,12 +56,50 @@
 }
 
 .signup-container-form input {
-  min-width: 270px;
+  min-width: 290px;
   border-radius: 3px;
   margin-bottom: 20px;
   position: relative;
 }
+.signup-input-file {
+  width: 90px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  height: 90px;
+  background-color: #bdbdbd;
+  /* align-self: flex-start; */
+}
 
+.edit-button-container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edit-button {
+  width: 10px;
+  height: 10px;
+  object-fit: contain;
+}
+
+.signup-input-file > img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
 .input-password {
   margin-bottom: 0px !important ;
 }
