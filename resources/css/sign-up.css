@@ -179,3 +179,29 @@
   position: relative;
   transform: translate(0px, -3px) rotate(180deg);
 }
+
+.signup-wrapper-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-wrapper-right-body-upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.signup-wrapper-right-body-upper > h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.signup-wrapper-right-body-upper > h6 {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  max-width: 470px;
+  line-height: 35px;
+}
