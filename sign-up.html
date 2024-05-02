@@ -83,13 +83,26 @@
             </h6>
           </div>
           <form class="signup-container-form">
-            <div class="input-primary signup-input-file">
-              <img src="/resources/images/user.png" alt="upload" />
+            <div
+              class="input-primary signup-input-file"
+              id="profileImageContainer"
+            >
+              <img
+                id="profileImage"
+                src="/resources/images/user.png"
+                alt="upload"
+              />
               <div class="edit-button-container">
                 <img
                   class="edit-button"
                   src="/resources/images/edit.png"
                   alt="edit"
+                />
+                <input
+                  type="file"
+                  id="fileInput"
+                  style="display: none"
+                  accept="image/*"
                 />
               </div>
             </div>
@@ -149,6 +162,36 @@
         this.classList.toggle("fa-eye");
         this.classList.toggle("fa-eye-slash");
       });
+
+      document
+        .querySelector(".edit-button")
+        .addEventListener("click", function () {
+          // Trigger the file input click
+          document.getElementById("fileInput").click();
+        });
+
+      document
+        .getElementById("fileInput")
+        .addEventListener("change", function () {
+          // Check if a file was selected
+          if (this.files && this.files[0]) {
+            var reader = new FileReader(); // Create a file reader
+            reader.onload = function (e) {
+              const profileImage = document.getElementById("profileImage");
+              profileImage.src = e.target.result; // Update the image source
+
+              // Update classes as needed
+              profileImage.classList.remove("old-class"); // Remove the old class
+              profileImage.classList.add("avatar-uploaded"); // Add a new class
+              const container = document.getElementById(
+                "profileImageContainer"
+              );
+              container.style.padding = "0"; // Set padding to 0
+              container.style.backgroundColor = "white"; // Set background color to white
+            };
+            reader.readAsDataURL(this.files[0]); // Read the file as a Data URL
+          }
+        });
     </script>
   </body>
 </html>

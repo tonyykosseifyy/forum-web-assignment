@@ -79,8 +79,8 @@
 
 .edit-button-container {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: -4px;
+  right: -7px;
   background-color: white;
   border-radius: 50%;
   padding: 10px;
@@ -108,6 +108,12 @@
   width: 70%;
   height: 70%;
   object-fit: contain;
+}
+.signup-input-file > img.avatar-uploaded {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 .input-password {
   margin-bottom: 0px !important ;
