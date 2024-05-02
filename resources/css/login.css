@@ -1,0 +1,17 @@
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.upper-container {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.upper-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--main-color);
+}
