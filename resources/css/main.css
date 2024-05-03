@@ -38,3 +38,32 @@
   width: 100%;
   margin-top: 100px;
 }
+
+.top-titles > h1 {
+  margin-bottom: 20px;
+  font-size: 50px;
+  line-height: 56px;
+  font-weight: 300;
+}
+
+.top-titles > h6 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 300;
+}
+
+.top-titles > input {
+  outline: none;
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 26px;
+  margin-top: 80px;
+}
+
+.top-titles > input::placeholder {
+  font-size: 20px;
+}
