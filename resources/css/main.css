@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fdc17d;
+  padding: 16px 10vw;
+}
+
+.navbar-left > h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
