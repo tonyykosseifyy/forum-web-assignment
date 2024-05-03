@@ -10,3 +10,9 @@
   font-size: 1.5rem;
   font-weight: 600;
 }
+
+.navbar-right > button {
+  padding: 10px 15px;
+  margin-left: 7px;
+  border-radius: 3px;
+}
