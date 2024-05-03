@@ -54,7 +54,47 @@
         </div>
       </div>
       <!-- Posts -->
-      <div class="posts-wrapper"></div>
+      <div class="posts-wrapper">
+        <!-- Post Wrapper Upper -->
+        <div class="posts-wrapper-upper">
+          <h3>3340 Conversations</h3>
+          <!-- Dropdown -->
+          <div class="dropdown">
+            <div class="dropdown">
+              <button id="dropdownButton">
+                <span>Newest First</span>
+                <img src="/resources/images/down-arrow.png" alt="arrow" />
+              </button>
+              <div id="dropdownContent" class="dropdown-content">
+                <a href="#">Newest First</a>
+                <a href="#">Most Views</a>
+                <a href="#">Most Replies</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Post Wrapper Body -->
+        <div class="posts-wrapper-body"></div>
+      </div>
     </div>
+    <script>
+      document
+        .getElementById("dropdownButton")
+        .addEventListener("click", function () {
+          var dropdownContent = document.getElementById("dropdownContent");
+          dropdownContent.style.display =
+            dropdownContent.style.display === "block" ? "none" : "block";
+        });
+
+      // Add event listeners to each dropdown link
+      document.querySelectorAll(".dropdown-content a").forEach((item) => {
+        item.addEventListener("click", function () {
+          // Update the text within the span element in the button
+          document.querySelector("#dropdownButton span").textContent =
+            this.textContent;
+          document.getElementById("dropdownContent").style.display = "none";
+        });
+      });
+    </script>
   </body>
 </html>
