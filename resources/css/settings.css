@@ -28,7 +28,62 @@
   margin-top: 50px;
 }
 
-
 .bold {
   font-weight: 500;
+}
+
+.settings-input-file {
+  width: 90px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 90px;
+  background-color: #bdbdbd;
+  margin-top: 25px;
+}
+
+.settings-input-file > img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.settings-input-file > img.avatar-uploaded {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.edit-button-container {
+  position: absolute;
+  top: -4px;
+  right: -7px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bdbdbd;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.edit-button-container:hover {
+  border-color: black;
+  transform: scale(1.1);
+}
+
+.edit-button {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  transform: translateX(1px);
+  position: relative;
 }
