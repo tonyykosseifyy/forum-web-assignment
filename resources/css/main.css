@@ -232,3 +232,29 @@
 .post-right-bottom > div > p {
   font-size: 14px;
 }
+
+.pagination-wrapper {
+  margin: 50px 0px 70px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+}
+.pagination-box {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 3px;
+  font-size: 14px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease-out;
+}
+
+.pagination-box:hover {
+  background-color: rgb(242, 242, 242);
+}
