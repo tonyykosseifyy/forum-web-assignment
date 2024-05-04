@@ -298,3 +298,17 @@
   font-size: 16px;
   font-weight: 300;
 }
+
+.last-footer {
+  padding: 35px 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+}
+.last-footer > p:last-child {
+  font-size: 14px;
+  text-decoration: underline;
+  opacity: 0.8;
+}
