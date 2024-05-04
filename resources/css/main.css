@@ -255,6 +255,21 @@
   transition: background-color 0.3s ease-out;
 }
 
+.pagination-box > img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
 .pagination-box:hover {
   background-color: rgb(242, 242, 242);
+}
+
+.pagination-box.next {
+  border: 1px solid #e3e4ec;
+  padding: 10px;
+}
+
+.pagination-box.active {
+  background-color: black;
+  color: white;
 }
