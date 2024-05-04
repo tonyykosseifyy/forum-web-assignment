@@ -1,0 +1,34 @@
+.settings-body {
+  margin-top: 50px;
+  border: 1px solid #e3e4ec;
+  border-radius: 2px;
+  padding: 24px;
+}
+
+.settings-body > h1 {
+  font-size: 32px;
+  font-weight: 500;
+  position: relative;
+  display: block;
+  width: fit-content;
+}
+
+.settings-body > h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 60%;
+  background-color: black;
+  bottom: -7px;
+  height: 3px;
+}
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+
+.bold {
+  font-weight: 500;
+}
