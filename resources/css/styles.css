@@ -79,3 +79,88 @@
 .toggle {
   cursor: pointer;
 }
+
+/* Modal and Overlay Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  transition: opacity 0.3 ease-out, visibility;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  display: block; /* Same as the overlay */
+  visibility: hidden; /* Initially not visible */
+  opacity: 0;
+  z-index: 1001;
+  transition: opacity 0.3s ease-out, visibility;
+  padding-bottom: 40px;
+}
+.modal-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-top > h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.modal-form label {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.modal-form input {
+  min-width: 290px;
+  border-radius: 3px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.modal-form button {
+  margin-top: 50px;
+  padding: 12px;
+}
