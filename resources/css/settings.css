@@ -7,8 +7,8 @@
 .settings-body {
   border: 1px solid #e3e4ec;
   border-radius: 2px;
-  padding: 24px 30px;
-  width: 680px;
+  padding: 24px 40px;
+  width: 640px;
 }
 
 .profile-body {
@@ -21,7 +21,7 @@
 
 .settings-body > h1,
 .profile-body > h1 {
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 500;
   position: relative;
   display: block;
@@ -154,4 +154,16 @@
 }
 .profile-body-scores > div > p {
   font-size: 13px;
+}
+
+.profile-body-bottom {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.profile-body button {
+  width: 200px;
+  margin-top: 50px;
+  padding: 10px;
 }
