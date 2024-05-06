@@ -19,7 +19,8 @@
   flex: 1;
 }
 
-.settings-body > h1 {
+.settings-body > h1,
+.profile-body > h1 {
   font-size: 32px;
   font-weight: 500;
   position: relative;
@@ -27,7 +28,8 @@
   width: fit-content;
 }
 
-.settings-body > h1::after {
+.settings-body > h1::after,
+.profile-body > h1::after {
   content: "";
   position: absolute;
   left: 0;
@@ -129,4 +131,27 @@
 
 .password-wrapper {
   position: relative;
+}
+
+.profile-body-scores {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+
+.profile-body-scores > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-body-scores > div > h6,
+.profile-body-scores > div > p {
+  font-weight: 400;
+}
+
+.profile-body-scores > div > h6 {
+  font-size: 20px;
+}
+.profile-body-scores > div > p {
+  font-size: 13px;
 }
