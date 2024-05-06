@@ -1,8 +1,22 @@
+.settings-wrapper {
+  display: flex;
+  padding-top: 50px;
+  align-items: flex-start;
+}
+
 .settings-body {
-  margin-top: 50px;
   border: 1px solid #e3e4ec;
   border-radius: 2px;
-  padding: 24px;
+  padding: 24px 30px;
+  width: 680px;
+}
+
+.profile-body {
+  border: 1px solid #e3e4ec;
+  border-radius: 2px;
+  padding: 24px 30px;
+  margin-left: 40px;
+  flex: 1;
 }
 
 .settings-body > h1 {
@@ -25,17 +39,33 @@
 .settings-form {
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
   margin-top: 50px;
 }
 
-.bold {
-  font-weight: 500;
+.settings-form label {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.settings-form input {
+  min-width: 290px;
+  border-radius: 3px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.settings-form button {
+  width: 140px;
+  margin-top: 30px;
+  padding: 10px;
 }
 
 .settings-input-file {
   width: 90px;
   border-radius: 3px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -85,5 +115,18 @@
   height: 15px;
   object-fit: contain;
   transform: translateX(1px);
+  position: relative;
+}
+
+.eye-toggle {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  z-index: 100;
+  padding: 0 0 0 10px;
+  background: white;
+}
+
+.password-wrapper {
   position: relative;
 }

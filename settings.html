@@ -21,6 +21,11 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/e0dbca38a7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -49,34 +54,70 @@
       </div>
 
       <!-- Settings Body -->
-      <div class="settings-body">
-        <h1>Settings</h1>
-        <form class="settings-form">
-          <label class="bold">Profile picture</label>
-          <div
-            class="input-primary settings-input-file"
-            id="profileImageContainer"
-          >
-            <img
-              id="profileImage"
-              src="/resources/images/user.png"
-              alt="upload"
-            />
-            <div class="edit-button-container">
+      <div class="settings-wrapper">
+        <div class="settings-body">
+          <h1>Settings</h1>
+          <form class="settings-form">
+            <label>Profile picture</label>
+            <div
+              class="input-primary settings-input-file"
+              id="profileImageContainer"
+            >
               <img
-                class="edit-button"
-                src="/resources/images/edit.png"
-                alt="edit"
+                id="profileImage"
+                src="/resources/images/user.png"
+                alt="upload"
               />
-              <input
-                type="file"
-                id="fileInput"
-                style="display: none"
-                accept="image/*"
-              />
+              <div class="edit-button-container">
+                <img
+                  class="edit-button"
+                  src="/resources/images/edit.png"
+                  alt="edit"
+                />
+                <input
+                  type="file"
+                  id="fileInput"
+                  style="display: none"
+                  accept="image/*"
+                />
+              </div>
             </div>
-          </div>
-        </form>
+
+            <label>Name</label>
+            <input
+              class="input-primary"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+            <label>Email</label>
+            <input
+              class="input-primary"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+            <label>Password</label>
+            <div class="password-wrapper">
+              <input
+                style="width: 100%"
+                class="input-primary input-password"
+                type="password"
+                id="password"
+                name="password"
+                required
+                placeholder=""
+              />
+              <div class="toggle eye-toggle">
+                <i class="fa fa-eye" id="togglePassword"></i>
+              </div>
+            </div>
+            <button class="button button-filled">Save Changes</button>
+          </form>
+        </div>
+        <div class="profile-body"></div>
       </div>
     </div>
 
@@ -85,6 +126,19 @@
       <p>Tony Kosseify - Selim Ellieh</p>
     </div>
     <script>
+      const togglePassword = document.getElementById("togglePassword");
+      const password = document.getElementById("password");
+
+      togglePassword.addEventListener("click", function () {
+        // Toggle the type attribute
+        const isPassword = password.type === "password";
+        password.type = isPassword ? "text" : "password";
+
+        // Toggle the icon class
+        this.classList.toggle("fa-eye");
+        this.classList.toggle("fa-eye-slash");
+      });
+
       document
         .querySelector(".edit-button")
         .addEventListener("click", function () {
