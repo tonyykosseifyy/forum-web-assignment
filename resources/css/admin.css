@@ -73,11 +73,22 @@
 
 .status {
   height: 35px;
-  /* width: 127px; */
   padding: 0px 20px;
   font-size: 14px;
   display: flex;
   border-radius: 80px;
   align-items: center;
   justify-content: center;
+}
+
+.col-4 .button {
+  padding: 10px 15px;
+  background-color: brown;
+  border: 1px solid brown;
+  border-radius: 4px;
+}
+
+.col-4 .button:hover {
+  background-color: white;
+  color: brown;
 }
