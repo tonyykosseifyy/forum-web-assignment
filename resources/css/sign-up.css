@@ -147,7 +147,7 @@
   font-style: italic;
 }
 
-.signup-container-form button {
+.signup-container-form .button {
   width: 100%;
   margin-top: 30px;
   padding: 10px;
