@@ -70,3 +70,14 @@
   object-fit: contain;
   margin-left: 6px;
 }
+
+.status {
+  height: 35px;
+  /* width: 127px; */
+  padding: 0px 20px;
+  font-size: 14px;
+  display: flex;
+  border-radius: 80px;
+  align-items: center;
+  justify-content: center;
+}
