@@ -2,10 +2,9 @@
   width: 100%;
   margin-top: 50px;
   position: relative;
-  
 }
 .tableee {
-    max-height: 70vh;
+  max-height: 70vh;
   overflow-y: scroll;
 }
 
@@ -20,13 +19,28 @@
 .settings-wrapper-users {
   padding-bottom: 50px;
 }
+
 .responsive-table li {
-  border-radius: 3px;
+  border-radius: 4px;
   padding: 25px 30px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
 }
+.profile-info h6 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.profile-info p {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(174, 174, 174);
+  margin-top: 2px;
+  font-style: italic;
+  text-decoration: underline;
+}
+
 .responsive-table .table-header {
   background-color: #fdc07d;
   color: #ffffff;
@@ -36,7 +50,7 @@
 }
 .responsive-table .table-row {
   background-color: #ffffff;
-  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e3e4ec;
 }
 .responsive-table .col-1 {
   flex-basis: 10%;
@@ -49,4 +63,10 @@
 }
 .responsive-table .col-4 {
   flex-basis: 25%;
+}
+.table-row img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  margin-left: 6px;
 }
