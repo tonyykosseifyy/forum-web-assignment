@@ -90,3 +90,7 @@
   resize: none;
   min-height: 200px;
 }
+.reply-container .button {
+  padding: 10px 40px;
+  margin-top: 20px;
+}
